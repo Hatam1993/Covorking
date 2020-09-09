@@ -203,6 +203,8 @@ right: 147px;
 	cursor: pointer;
 	outline: none;
 	position: absolute;
+	border: none;
+	background-repeat: no-repeat;
 }
 .slick-prev.slick-arrow {
 	right: 147px;
