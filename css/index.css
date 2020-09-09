@@ -188,14 +188,23 @@ h6 {
 }
 
 .slick-prev.slick-arrow {
-transform: rotate (180deg);
-right: 147px;
+	transform: rotate(180deg);
+	right: 222px;
+	top: -45px;
+	font-size: 0;
+	width: 57px;
+	height: 8px;
+	position: absolute;
+	background: url('../img/slickarrow.svg');
+	border: none;
+	background-repeat: no-repeat;
+	outline: none;
 }
 
 .slick-next.slick-arrow {
 	background-color: red;
-	top: -45px;
-	right: 222px;
+	top: -52px;
+	right: 147px;
 	font-size: 0;
 	height: 18px;
 	width: 57px;
@@ -206,29 +215,22 @@ right: 147px;
 	border: none;
 	background-repeat: no-repeat;
 }
-.slick-prev.slick-arrow {
-	right: 147px;
-	transform: none;
-	top: -45px;
-	font-size: 0;
-	width: 57px;
-	height: 8px;
-}
+
 .slick-next.slick-arrow::before,
-.slick-prev.slick-arrow::before {	
-content: '';
-position: absolute;
-top: -30px;
-width: 35;
-height: 40px;
-opacity: 0;
-border: 1px solid black;
-transition: 0.3;
+.slick-prev.slick-arrow::before {
+	content: '';
+	position: absolute;
+	top: -30px;
+	width: 35px;
+	height: 40px;
+	opacity: 0;
+	border: 1px solid black;
+	transition: 0.3;
 }
+
 .slick-next.slick-arrow:hover::before,
 .slick-prev.slick-arrow:hover::before {
 	top: -11px;
 	opacity: 1;
 
-} 
-
+}
